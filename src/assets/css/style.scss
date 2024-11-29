@@ -1,3 +1,5 @@
+@import "global";
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -13,6 +15,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  background-color: rgb(155, 155, 155);
+  }
+  
 a {
   font-weight: 500;
   color: #646cff;
