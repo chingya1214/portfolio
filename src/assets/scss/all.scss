@@ -1,4 +1,4 @@
-@import "global";
+@use "reset";
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -16,7 +16,7 @@
 }
 
 body {
-  background-color: rgb(155, 155, 155);
+  background-color: rgb(255, 255, 255);
   }
   
 a {
