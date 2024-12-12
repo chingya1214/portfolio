@@ -1,4 +1,6 @@
-@use "reset";
+@use "reset"; 
+@use "global"; 
+@use "main"; 
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
