@@ -1,0 +1,1 @@
+import{_ as o,c as t,a as n,o as a,e as r}from"./_plugin-vue_export-helper-Chk5PWUW.js";const c={};function s(p,e){return a(),t("div",null,e[0]||(e[0]=[n("h1",null,"123123",-1)]))}const l=o(c,[["render",s]]);r(l).mount("#about-app");
