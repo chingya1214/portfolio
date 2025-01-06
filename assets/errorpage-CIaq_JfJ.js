@@ -1,0 +1,1 @@
+import{_ as o,c as s,a as e,e as t,o as r}from"./index-QGDsOcre.js";const c={},n={class:"section"};function _(d,a){return r(),s("div",n,a[0]||(a[0]=[e("h1",null,"404",-1),e("p",null,[t(" 您要訪問的頁面不存在，由此 "),e("a",{href:"/"},"返回首頁")],-1)]))}const f=o(c,[["render",_],["__scopeId","data-v-09e3ea77"]]);export{f as default};
