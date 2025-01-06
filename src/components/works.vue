@@ -1,59 +1,67 @@
-<script setup></script>
+<script>
+import { ref } from "vue";
+export default {
+  setup() {
+    const works = ref([
+      {
+        title: "NCCUXDISA新移民網路市集",
+        link: "https://nccuiixdisa.netlify.app/",
+        img: "/images/works_nccuiixdisa.png",
+        intr: "使用 HTML、CSS、Bootstrap 進行切版，實作響應式網站設計(RWD)",
+        tags: ["HTML", "CSS", "Bootstrap", "JavaScript"],
+      },
+      {
+        title: "憂遇 When We Meet",
+        link: "https://whenwemeet2022.netlify.app/",
+        img: "/images/works_whenwemeet.png",
+        intr: "透過動態圖像連結情緒，傳遞憂鬱與生活的距離。根據測驗結果了解憂鬱相關傾向程度，提供初步治療方向。",
+        tags: ["Vue.js", "HTML", "SCSS", "JavaScript"],
+      },
+      {
+        title: "保誠人壽保誠創新智造所",
+        link: "https://chingya1214.github.io/pcalife/",
+        img: "/images/works_pcalife.png",
+        intr: "頁面切版包含提案說明、填寫資料、投票等功能，並使用 axios 進行 API 串接。",
+        tags: ["Vue.js", "HTML", "CSS", "Bootstrap", "JavaScript", "Axios"],
+      },
+      {
+        title: "東美銘牌工藝社",
+        link: "https://tonmei.tw/index.html",
+        img: "/images/works_tonmei.png",
+        intr: "網站視覺版面設計，以php 建立後台及資料庫串接",
+        tags: ["HTML", "CSS", "Bootstrap", "JavaScript", "PHP", "MySQL"],
+      },
+      {
+        title: "SOUL耳機 台灣官網",
+        link: "https://www.i2tec.com/soul/soul/",
+        img: "/images/works_soul.png",
+        intr: "協助 SOUL 耳機台灣官網進行改版，重新製作網站頁面",
+        tags: ["HTML", "CSS", "Bootstrap", "JavaScript", "PHP", "JSON"],
+      },
+    ]);
+    const isShow = ref(false);
+    const Open = () => (isShow.value = true);
+    const Close = () => (isShow.value = false);
+    return { isShow, Open, works, Close };
+  },
+};
+</script>
+
 <template>
   <div class="content">
+    <!-- <ul class="filter-button">
+      <li @click="Open">專案</li>
+      <li @click="Change">切版</li>
+    </ul> -->
     <ul class="works">
-      <li class="works-item">
-        <a href="#">
-          <div class="img"><img src="@/assets/images/bg01.png" alt="" /></div>
+      <li class="works-item" v-for="item in works" :key="item.id">
+        <a :href="item.link">
+          <div class="img"><img :src="item.img" alt="" /></div>
           <div class="works-item-content">
-            <h2>星際旅行訂票平台</h2>
-            <p>悠遊宇宙的夢想，從這裡開始實現</p>
+            <h2>{{ item.title }}</h2>
+            <p>{{ item.intr }}</p>
             <ul class="tags">
-              <li class="tags-item">網頁設計</li>
-              <li class="tags-item">響應式設計</li>
-              <li class="tags-item">Bootstrap</li>
-            </ul>
-          </div>
-        </a>
-      </li>
-      <li class="works-item">
-        <a href="#">
-          <div class="img"><img src="@/assets/images/bg01.png" alt="" /></div>
-          <div class="works-item-content">
-            <h2>理財App</h2>
-            <p>連動帳戶與行動支付，讓 AI 提供您最好的理財建議</p>
-            <ul class="tags">
-              <li class="tags-item">APP設計</li>
-              <li class="tags-item">iOS</li>
-              <li class="tags-item">React</li>
-            </ul>
-          </div>
-        </a>
-      </li>
-      <li class="works-item">
-        <a href="#">
-          <div class="img"><img src="@/assets/images/bg01.png" alt="" /></div>
-          <div class="works-item-content">
-            <h2>醫美診所官網</h2>
-            <p>永保青春的秘密，從粹究開始</p>
-            <ul class="tags">
-              <li class="tags-item">網頁設計</li>
-              <li class="tags-item">響應式設計</li>
-              <li class="tags-item">ＷordPress</li>
-            </ul>
-          </div>
-        </a>
-      </li>
-      <li class="works-item">
-        <a href="#">
-          <div class="img"><img src="@/assets/images/bg01.png" alt="" /></div>
-          <div class="works-item-content">
-            <h2>美美美早餐店 POS 機 UI Design</h2>
-            <p>訂單送單一目瞭然，自動報表分析好輕鬆</p>
-            <ul class="tags">
-              <li class="tags-item">UI 設計</li>
-              <li class="tags-item">前端開發</li>
-              <li class="tags-item">Wix</li>
+              <li class="tags-item" v-for="tag in item.tags" :key="tag.id">{{ tag }}</li>
             </ul>
           </div>
         </a>
@@ -79,9 +87,10 @@
   margin-bottom: 80px;
   .img {
     width: 100%;
-    height: 400px;
+    height: 300px;
     border-radius: 8px;
     overflow: hidden;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
   }
   img {
     width: 100%;
@@ -126,6 +135,30 @@
     padding: 4px 12px;
     margin-right: 16px;
     border-radius: 16px;
+  }
+}
+
+.filter-button {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  gap: 20px;
+  li {
+    border: 3px solid #bacae3;
+    background: #bacae3;
+    border-radius: 18px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    transition: all 0.3s ease-out;
+    &:hover {
+      background: #bacae3;
+      color: #fcfcfc;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+    }
   }
 }
 

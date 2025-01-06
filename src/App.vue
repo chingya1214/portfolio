@@ -42,6 +42,15 @@ import "bootstrap/dist/js/bootstrap.js";
 <style lang="scss" scoped>
 .header {
   max-width: 100%;
+  .nav-item {
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s;
+  }
+  .nav-item:hover {
+    color: #2e406f;
+    border-bottom: 3px solid #2e406f;
+    transition: all 0.3s;
+  }
 }
 
 .navbar {

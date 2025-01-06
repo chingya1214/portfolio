@@ -6,7 +6,7 @@ import Works from "../components/works.vue";
 
 <template>
   <div id="about" class="section">
-    <h1>簡介</h1>
+    <!-- <h1>簡介</h1> -->
     <About />
   </div>
 
@@ -37,7 +37,7 @@ h1 {
   overflow: hidden;
   padding: 96px 0 24px 0; //top 72px is navbar
   margin: 0 auto;
-  min-height: calc(100vh - 52px);
+  // min-height: calc(100vh - 52px);
   width: 1296px;
   // background-color: rgb(102, 75, 75);
   &-full {

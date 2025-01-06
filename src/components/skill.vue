@@ -1,50 +1,35 @@
 <script setup></script>
 <template>
   <div class="content">
-    <div id="skill" class="skill">
+    <div class="skill">
       <div class="skill-item">
-        <h3 class="skill-subtitle">Document Processing</h3>
+        <h3 class="skill-subtitle">網站切版 Web / Layout</h3>
+        <p>能依照設計師的設計稿切出版型，並進行響應式（RWD）網頁設計。</p>
         <ul class="skill-list">
-          <li class="skill-list-item">Notion / JIRA</li>
-          <li class="skill-list-item">Figma / Zeplin</li>
-          <li class="skill-list-item"></li>
-          <li class="skill-list-item">Confluence</li>
-          <li class="skill-list-item">Slack</li>
-          <li class="skill-list-item">PowerPoint / Word</li>
+          <li class="skill-list-item">熟悉 HTML5 / CSS3 網站設計</li>
+          <li class="skill-list-item">手刻 RWD 響應式網站</li>
+          <li class="skill-list-item">具 Bootstrap 使用經驗</li>
+          <li class="skill-list-item">使用 SCSS 管理屬性</li>
         </ul>
       </div>
       <div class="skill-item">
-        <h3 class="skill-subtitle">Web Development</h3>
+        <h3 class="skill-subtitle">網頁開發 Vue / JavaScript</h3>
+        <p>了解 JavaScript 基本語法與 ES6 常見特性，能使用 Vue.js 進行網頁開發，能進行 API 串接資料。</p>
         <ul class="skill-list">
-          <li class="skill-list-item">HTML5</li>
-          <li class="skill-list-item">CSS3 &amp; SCSS</li>
-          <li class="skill-list-item">JavaScript</li>
-          <li class="skill-list-item">TypeScript</li>
-          <li class="skill-list-item">Webpack</li>
-          <li class="skill-list-item">Npm &amp; Yarn</li>
-          <li class="skill-list-item">Ruby on Rails</li>
-          <li class="skill-list-item">Antd &amp; Bootstrap</li>
-          <li class="skill-list-item">Eslint</li>
-          <li class="skill-list-item">React &amp; hooks</li>
-          <li class="skill-list-item">React Native</li>
-          <li class="skill-list-item">Redux</li>
-          <li class="skill-list-item">MobX / MST</li>
-          <li class="skill-list-item">Styled-components</li>
-          <li class="skill-list-item">Tailwind CSS</li>
-          <li class="skill-list-item">Emotion</li>
-          <li class="skill-list-item">Webview</li>
-          <li class="skill-list-item">GraphQL</li>
-          <li class="skill-list-item">Jest</li>
-          <li class="skill-list-item">Git Flow</li>
+          <li class="skill-list-item">使用 components 元件切版</li>
+          <li class="skill-list-item">使用 Vue-router 路由配置</li>
+          <li class="skill-list-item">了解 JavaScript 基本語與 ES6 語言特性</li>
+          <li class="skill-list-item">熟悉 Axios / JSON 串接第三方 API</li>
+          <li class="skill-list-item">具使用 Vite 進行 Vue 專案開發經驗</li>
         </ul>
       </div>
       <div class="skill-item">
-        <h3 class="skill-subtitle">Language</h3>
+        <h3 class="skill-subtitle">美編排版及美術設計</h3>
+        <p>擅長美編排版，能設計具美感的視覺作品；擅長使用電腦繪圖軟體進行設計，具有修圖、合成等能力及經驗。</p>
         <ul class="skill-list">
-          <li class="skill-list-item">Chinese</li>
-          <li class="skill-list-item">Taiwanese</li>
-          <li class="skill-list-item">English</li>
-          <li class="skill-list-item">Korean</li>
+          <li class="skill-list-item">Figma</li>
+          <li class="skill-list-item">Adobe Photoshop</li>
+          <li class="skill-list-item">Adobe Illustrator</li>
         </ul>
       </div>
     </div>
@@ -61,12 +46,14 @@
   gap: 30px;
   justify-content: space-between;
   padding: 0 10px;
+  line-height: 1.5;
   &-item {
     width: 32%;
-    padding: 20px;
+    padding: 20px 30px;
     background-color: #f5f5f5;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s;
     h3 {
       margin-bottom: 20px;
       font-size: 28px;
@@ -74,13 +61,21 @@
       color: rgb(22, 66, 97);
       font-weight: 700;
     }
+    p {
+      margin-bottom: 20px;
+    }
     ul {
-      list-style-type: none;
+      list-style-type: disc;
       li {
+        margin-left: 25px;
         margin-bottom: 5px;
-        text-align: center;
+        // text-align: center;
       }
     }
+  }
+  &-item:hover {
+    box-shadow: 1px 3px 24px rgba(0, 0, 0, 0.7);
+    transition: all 0.3s;
   }
 }
 
