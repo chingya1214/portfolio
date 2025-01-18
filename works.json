@@ -1,0 +1,52 @@
+{
+  "works": [
+    {
+      "title": "NCCUXDISA新移民網路市集",
+      "category": "專案作品",
+      "link": "https://nccuiixdisa.netlify.app/",
+      "img": "/portfolio/images/works_nccuiixdisa.png",
+      "intr": "使用 HTML、CSS、Bootstrap 進行切版，實作響應式網站設計(RWD)",
+      "tags": ["HTML", "CSS", "Bootstrap", "JavaScript"]
+    },
+    {
+      "title": "憂遇 When We Meet",
+      "category": "專案作品",
+      "link": "https://whenwemeet2022.netlify.app/",
+      "img": "/portfolio/images/works_whenwemeet.png",
+      "intr": "透過動態圖像連結情緒，傳遞憂鬱與生活的距離。根據測驗結果了解憂鬱相關傾向程度，提供初步治療方向。",
+      "tags": ["Vue.js", "HTML", "SCSS", "JavaScript"]
+    },
+    {
+      "title": "保誠人壽保誠創新智造所",
+      "category": "專案作品",
+      "link": "https://chingya1214.github.io/pcalife/",
+      "img": "/portfolio/images/works_pcalife.png",
+      "intr": "頁面切版包含提案說明、填寫資料、投票等功能，並使用 axios 進行 API 串接。",
+      "tags": ["Vue.js", "HTML", "CSS", "Bootstrap", "JavaScript", "Axios"]
+    },
+    {
+      "title": "東美銘牌工藝社",
+      "category": "專案作品",
+      "link": "https://tonmei.tw/index.html",
+      "img": "/portfolio/images/works_tonmei.png",
+      "intr": "網站視覺版面設計，以php 建立後台及資料庫串接",
+      "tags": ["HTML", "CSS", "Bootstrap", "JavaScript", "PHP", "MySQL"]
+    },
+    {
+      "title": "SOUL耳機 台灣官網",
+      "category": "專案作品",
+      "link": "https://www.i2tec.com/soul/soul/",
+      "img": "/portfolio/images/works_soul.png",
+      "intr": "協助 SOUL 耳機台灣官網進行改版，重新製作網站頁面",
+      "tags": ["HTML", "CSS", "Bootstrap", "JavaScript", "PHP", "JSON"]
+    },
+    {
+      "title": "SOUL耳機 台灣官網",
+      "category": "練習作品",
+      "link": "https://www.i2tec.com/soul/soul/",
+      "img": "/portfolio/images/works_soul.png",
+      "intr": "協助 SOUL 耳機台灣官網進行改版，重新製作網站頁面",
+      "tags": ["HTML", "CSS", "Bootstrap", "JavaScript", "PHP", "JSON"]
+    }
+  ]
+}
